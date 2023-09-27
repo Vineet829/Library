@@ -1,20 +1,22 @@
-
-
+.container{
+    text-align: center;
+}
 .collection{
     
-
+    padding-left: auto;
+    padding-right: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 250px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(autofit,50em);
     grid-auto-flow: row;
    gap: 50px;
 }
  
+
 .book {
-    min-width: minmax(200px, 1fr);
-    
     border: solid;
-    
+    height: minmax(10em,fit-content);
+    width: minmax(10em, fit-content);
 }
 
 .book > p{

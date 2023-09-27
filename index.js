@@ -2,7 +2,9 @@ const button = document.querySelector(".but")
 const collection = document.querySelector(".collection")
 
 const myLibrary = [];
-const Book = function(author, title, pages, read_status){
+class Book {
+constructor  (author, title, pages, read_status){
+ 
 this.author = author
 this.title = title
 this.pages = pages
@@ -10,6 +12,7 @@ this.read_status = read_status
 }
 
 
+}
 
 
 
@@ -28,9 +31,7 @@ button.addEventListener("click", function addBookToLibrary() {
     var arr = Object.values(myLibrary[myLibrary.length - 1])   
     var arr1 =  Object.keys(myLibrary[myLibrary.length - 1])  
     for(let i = 0; i<arr.length+1; i++){
-      
-         
-   if(i < 3){   
+    if(i < 3){   
       
       const para = document.createElement("p")
       para.textContent = arr1[i] + ":  " + arr[i]
@@ -65,9 +66,6 @@ button.addEventListener("click", function addBookToLibrary() {
    }
       
 }
-
-
-
 
 )
 
