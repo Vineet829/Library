@@ -1,0 +1,23 @@
+
+
+.collection{
+    
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 250px;
+    grid-auto-flow: row;
+   gap: 50px;
+}
+ 
+.book {
+    min-width: minmax(200px, 1fr);
+    
+    border: solid;
+    
+}
+
+.book > p{
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
